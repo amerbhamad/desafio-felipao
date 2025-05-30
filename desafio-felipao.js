@@ -1,23 +1,23 @@
 let nomedojogador = "Amer";
-let QuantidadedeXPatual = 10000;
+let xp = 5004
 let ranque = "";
 
-if (QuantidadedeXPatual < 1000) {
-    console.log("Ferro.");
-if (QuantidadedeXPatual >= 1001 && QuantidadedeXPatual <= 2000) 
-    console.log("Bronze.");
-if (QuantidadedeXPatual >= 2001 && QuantidadedeXPatual <= 5000) 
-    console.log("Prata.");
-if (QuantidadedeXPatual >= 5001 && QuantidadedeXPatual <= 7000) 
-    console.log("Ouro.");
-if (QuantidadedeXPatual >= 7001 && QuantidadedeXPatual <= 8000) 
-    console.log("Platina.");
-if (QuantidadedeXPatual >= 8001 && QuantidadedeXPatual <= 9000) 
-    console.log("Ascendente.");
-if (QuantidadedeXPatual >= 9001 && QuantidadedeXPatual <= 10000) 
-    console.log("Imortal.");
-if (QuantidadedeXPatual >= 10001) 
-    console.log("Radiante.");
+if (xp <= 1000) {
+    ranque = "Ferro";
+}   else if (xp >= 1001 && xp <= 2000) {
+    ranque = "Bronze";
+}   else if (xp >= 2001 && xp <= 5000) {    
+    ranque = "Prata";
+} else if (xp >= 5001 && xp <= 7000) {
+    ranque = "Ouro";
+} else if (xp >= 7001 && xp <= 8000) {
+    ranque = "Platina";
+} else if (xp >= 8001 && xp <= 9000) {
+    ranque = "Ascendente";
+} else if (xp >= 9001 && xp <= 10000) {
+    ranque = "Imortal";
+} else if (xp >= 10001) {
+    ranque = "Radiante";
 }
 
 console.log("O herói de nome " + nomedojogador + " está no nivel de " + ranque ) 
